@@ -118,10 +118,9 @@ class _SignupState extends State<Signup> {
                             // ),
                           ],
                         ),
-                        
                         const SizedBox(height: 5),
                         SizedBox(
-                            width: double.maxFinite,
+                          width: double.maxFinite,
                           child: ElevatedButton(
                               onPressed: (() async {
                                 if (_key.currentState!.validate()) {
@@ -138,69 +137,6 @@ class _SignupState extends State<Signup> {
                               }),
                               child: const Text("Sign up")),
                         ),
-// const SizedBox(height: 10),
-
-//     SizedBox(
-//       width: (MediaQuery.of(context).size.width / 2) - 40,
-//       child: const Divider(),
-//     ),
-//     const Text("Or"),
-//     SizedBox(
-//       width: (MediaQuery.of(context).size.width / 2) - 40,
-//       child: const Divider(),
-//     ),
-//   ],
-// ),
-// const SizedBox(height: 20),
-// Row(
-//   children: [
-//     ElevatedButton(
-//       onPressed: (() {}),
-//       style: ButtonStyle(
-//         elevation: MaterialStateProperty.all(0),
-//         backgroundColor: MaterialStateProperty.all(
-//             const Color.fromARGB(255, 242, 241, 239)),
-//       ),
-//       child: Padding(
-//         padding: const EdgeInsets.all(8.0),
-//         child: Column(
-//           children: [
-//             SvgPicture.network(
-//                 'https://www.vectorlogo.zone/logos/google/google-icon.svg'),
-//             const SizedBox(height: 25),
-//             const Text(
-//               'Sign in with Google',
-//               style: TextStyle(color: Colors.grey),
-//             ),
-//           ],
-//         ),
-//       ),
-//     ),
-//     const SizedBox(width: 10),
-//     ElevatedButton(
-//       onPressed: (() {}),
-//       style: ButtonStyle(
-//         elevation: MaterialStateProperty.all(0),
-//         backgroundColor: MaterialStateProperty.all(
-//             const Color.fromARGB(255, 7, 7, 7)),
-//       ),
-//       child: Padding(
-//         padding: const EdgeInsets.all(8.0),
-//         child: Column(
-//           children: [
-//             Image.asset(
-//                 'assets/images/icons8-apple-logo-48.png'),
-//             const SizedBox(height: 10),
-//             const Text(
-//               'Sign in with Apple',
-//               style: TextStyle(color: Colors.grey),
-//             ),
-//           ],
-//         ),
-//       ),
-//     ),
-//   ],
-// )
                       ],
                     ),
                   ),

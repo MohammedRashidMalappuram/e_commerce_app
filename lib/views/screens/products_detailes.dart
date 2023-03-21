@@ -8,13 +8,12 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:provider/provider.dart';
 
 class ProductsDetails extends StatelessWidget {
-  ProductsDetails({super.key, required this.index});
+  const ProductsDetails({super.key, required this.index});
   final int index;
-
-  bool favoriteButton = false;
 
   @override
   Widget build(BuildContext context) {
+    bool favoriteButton = false;
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: Consumer<ProviderFile>(builder: (context, getData, child) {
@@ -261,18 +260,5 @@ class ProductsDetails extends StatelessWidget {
         );
       }),
     );
-  }
-
-  // _addtoCart(BuildContext context) async {
-  _snackBar(context) {
-    const snackBar = SnackBar(
-      backgroundColor: Colors.red,
-      behavior: SnackBarBehavior.floating,
-      margin: EdgeInsets.all(30.0),
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(10))),
-      content: Text('Successfully Cart Added !'),
-    );
-    ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 }

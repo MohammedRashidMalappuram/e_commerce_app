@@ -12,7 +12,6 @@ class Favorite extends StatelessWidget {
     final gettingProvider = Provider.of<ProviderFile>(context);
     gettingProvider.loadS();
     return Scaffold(
-      //backgroundColor: Colors.grey[300],
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
@@ -37,11 +36,9 @@ class Favorite extends StatelessWidget {
             itemCount: getData.favorite.length,
             itemBuilder: ((context, index) {
               return Container(
-                // margin: const EdgeInsets.all(10),
                 height: 120,
                 width: double.infinity,
                 decoration: const BoxDecoration(
-                  //  color: Colors.white,
                   borderRadius: BorderRadius.only(),
                 ),
                 child: Center(
@@ -67,16 +64,12 @@ class Favorite extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(gettingProvider
-                              .data
-                              .products[gettingProvider.favorite[index]]
-                              .title),
+                          Text(gettingProvider.data
+                              .products[gettingProvider.favorite[index]].title),
                           Row(
                             children: [
                               Text(
-                                '\$ ${gettingProvider.data.products[gettingProvider.favorite
-                                
-                                [index]].price}',
+                                '\$ ${gettingProvider.data.products[gettingProvider.favorite[index]].price}',
                                 style: titleHome,
                               ),
                               Text(
@@ -106,35 +99,3 @@ class Favorite extends StatelessWidget {
     );
   }
 }
-//child: Center(
-//   child: ListTile(
-//     title: Text(gettingProvider.data
-//         .products[gettingProvider.cartSample[index]].title),
-//     subtitle: Row(
-//       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//       children: [
-//         Text(
-//             '\$ ${gettingProvider.data.products[gettingProvider.cartSample[index]].price}'),
-//         IconButton(
-//             onPressed: (() {
-//               gettingProvider.removeItem(index);
-//             }),
-//             icon: const Icon(Icons.delete))
-//       ],
-//     ),
-//     leading: Container(
-//       width: 100,
-//       //height: 120,
-//       decoration: BoxDecoration(
-//         borderRadius: BorderRadius.circular(20),
-//         image: DecorationImage(
-//           image: NetworkImage(gettingProvider
-//               .data
-//               .products[gettingProvider.cartSample[index]]
-//               .thumbnail),
-//           //fit: BoxFit.fill,
-//         ),
-//       ),
-//     ),
-//   ),
-// ),

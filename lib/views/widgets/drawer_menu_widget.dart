@@ -74,16 +74,10 @@ class DrawerMenu extends StatelessWidget {
             ),
             onTap: () async {
               await FirebaseAuthMethods().signOut();
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //     builder: ((context) => const Login()),
-              //   ),
-              // );
             },
           ),
         ],
       ),
-    ); //Drawer
+    );
   }
 }

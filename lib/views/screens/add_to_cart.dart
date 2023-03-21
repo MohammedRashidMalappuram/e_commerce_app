@@ -96,12 +96,13 @@ class _AddToCartState extends State<AddToCart> {
                                         .products[
                                             gettingProvider.cartSample[index]]
                                         .title,
-                                    style:
-                                        const TextStyle(fontWeight: FontWeight.bold),
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                       'by ${gettingProvider.data.products[gettingProvider.cartSample[index]].brand}',
-                                      style: const TextStyle(color: Colors.grey)),
+                                      style:
+                                          const TextStyle(color: Colors.grey)),
                                   const SizedBox(
                                     height: 10,
                                   ),
@@ -136,7 +137,8 @@ class _AddToCartState extends State<AddToCart> {
                                       style: ElevatedButton.styleFrom(
                                           backgroundColor: Colors.transparent,
                                           elevation: 0,
-                                          side: const BorderSide(color: Colors.grey)))
+                                          side: const BorderSide(
+                                              color: Colors.grey)))
                                 ],
                               ),
                             )
@@ -169,73 +171,3 @@ class _AddToCartState extends State<AddToCart> {
     );
   }
 }
-
-
-
-
-
-// Container(
-//                     margin: const EdgeInsets.all(10),
-//                     height: 120,
-//                     width: double.maxFinite,
-//                     decoration: const BoxDecoration(
-//                       color: Colors.white,
-//                       borderRadius: BorderRadius.only(
-//                         topLeft: Radius.circular(30),
-//                         bottomRight: Radius.circular(30),
-//                       ),
-//                     ),
-//                     child: Center(
-//                       child: ListTile(
-//                         title: Text(gettingProvider.data
-//                             .products[gettingProvider.cartSample[index]].title),
-//                         subtitle: Row(
-//                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                           children: [
-//                             Text(
-//                                 '\$ ${gettingProvider.data.products[gettingProvider.cartSample[index]].price}'),
-//                             IconButton(
-//                                 onPressed: (() {
-//                                   getData.removeItem(index);
-//                                 }),
-//                                 icon: const Icon(Icons.delete))
-//                           ],
-//                         ),
-//                         leading: Container(
-//                           width: 100,
-//                           //height: 120,
-//                           decoration: BoxDecoration(
-//                             // borderRadius: BorderRadius.only(
-//                             //   topLeft: Radius.circular(30),
-//                             //   bottomRight: Radius.circular(30),
-//                             // ),
-//                             //fast the case 2
-//                             image: DecorationImage(
-//                               image: NetworkImage(gettingProvider
-//                                   .data
-//                                   .products[gettingProvider.cartSample[index]]
-//                                   .thumbnail),
-//                               //fit: BoxFit.fill,
-//                             ),
-//                           ),
-//                         ),
-//                         trailing: NumberSelection(
-//                           theme: NumberSelectionTheme(
-//                               draggableCircleColor: Colors.blue,
-//                               iconsColor: Colors.white,
-//                               numberColor: Colors.white,
-//                               backgroundColor: Colors.deepPurpleAccent,
-//                               outOfConstraintsColor: Colors.deepOrange),
-//                           initialValue: 1,
-//                           minValue: 0,
-//                           maxValue: 10,
-//                           direction: Axis.vertical,
-//                           withSpring: true,
-//                           onChanged: (int value) => ("value: $value"),
-//                           enableOnOutOfConstraintsAnimation: true,
-//                           onOutOfConstraints: () =>
-//                               ("This value is too high or too low"),
-//                         ),
-//                       ),
-//                     ),
-//                   );

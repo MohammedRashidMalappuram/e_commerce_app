@@ -126,15 +126,7 @@ class _LoginState extends State<Login> {
                     ElevatedButton(
                       onPressed: () {
                         FirebaseAuthMethods().signInWithGoogle();
-                        ("object");
-
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: ((context) => const HomePage()),
-                        //   ),
-                        // );
-                      }, 
+                      },
                       style: ButtonStyle(
                         elevation: MaterialStateProperty.all(0),
                         backgroundColor: MaterialStateProperty.all(
